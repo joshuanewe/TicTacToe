@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+button {
+	text-decoration: none;
+	background-color: #fff;
+	border: none;
+	outline: none;
+}
+
+.btn {
+	height: 40px;
+	width: 80px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	/* margin: auto 5px; */
+}
+.btn:hover {
+	background-color: #89b0ae;
+	/* color: #fff; */
+}
+
+#gameBoardContainer {
+	position: relative;
+	border: 1px solid #000;
+	margin: 80px auto 0 auto;
+	width: 80%;
+	height: 700px;
+	border-radius: 5px;
+}
+#difficultySetting {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	border-radius: 2px;
+}
+
+#playerSelection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 150px;
+}
+
+#gameBoard {
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	height: 450px;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 80px 80px 80px;
+	grid-template-rows: 90px 90px 90px;
+}
+#gameBoard button {
+	width: 80px;
+	height: 90px;
+	/* border: 1px solid #000; */
+}
+
+#gameBoard button:hover {
+	background-color: #ffd6ba;
+}
+
+#resultsPanel {
+	display: flex;
+	height: 100px;
+}
+
+#resultsPanel h2 {
+	margin: auto;
+}
+
+/* Board game space styling */
+
+/* Y Axis */
+.top {
+	border-bottom: 1px solid black;
+}
+
+.middle {
+	border-bottom: 1px solid black;
+}
+
+/* X Axis */
+.left {
+	border-right: 1px solid black;
+}
+
+.right {
+	border-left: 1px solid black;
+}

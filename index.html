@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <main>
+      <div id="gameBoardContainer">
+        <div id="playerSelection">
+          <select name="Difficulty" id="difficultySetting">
+            <option value="easy">easy</option>
+            <option value="intermediate">intermediate</option>
+            <option value="unbeatable">unbeatable</option>
+          </select>
+
+          </option>
+          <h3>Player Selection</h3>
+          <div>
+            <button class="btn">X</button>
+            <button class="btn">O</button>
+          </div>
+        </div>
+
+        <div id="gameBoard">
+          <button class="space top left"></button>
+          <button class="space top center"></button>
+          <button class="space top right"></button>
+          <button class="space middle left"></button>
+          <button class="space middle center"></button>
+          <button class="space middle right"></button>
+          <button class="space bottom left"></button>
+          <button class="space bottom center"></button>
+          <button class="space bottom right"></button>
+        </div>
+        <div id="resultsPanel">
+          <h2></h2>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
